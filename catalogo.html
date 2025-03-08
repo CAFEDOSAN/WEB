@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFÉ DOSAN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>CAFÉ DOSAN</h1>
+        <button class="menu-btn">
+            <span class="menu-icon">&#9776;</span>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#acerca">Acerca de</a></li>
+                <li><a href="index.html#tipos">Tipos de café</a></li>
+                <li><a href="index.html#envio">Envío</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="catalogo.html">catalogo</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </header>
+    <div class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Tu carrito</h2>
+            <div class="cart-items">
+                </div>
+            <div class="cart-total">
+                <p>Total: $<span class="total-price">0.00</span></p>
+                <button class="checkout-btn">Pagar</button>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section id="catalogo">
+            <h2>Catálogo de bolsas de café</h2>
+            <div class="catalogo-grid">
+                <div class="producto">
+                    <img src="BolsaCerezo.jpg" alt="Bolsa de café 1">
+                    <h3>Café Cerezo</h3>
+                    <p>Sabor con notas frutales y acidez brillante.</p>
+                    <p class="precio">$80.00</p>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+                <div class="producto">
+                    <img src="BolsaPergamino.jpg" alt="Bolsa de café 2">
+                    <h3>Café Pergamino</h3>
+                    <p>Cremoso y notas a chocolate.</p>
+                    <p class="precio">$100.00</p>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+                <div class="producto">
+                    <img src="BolsaMarago.jpg" alt="Bolsa de café 3">
+                    <h3>Café Marago</h3>
+                    <p>Sabor a chocolate y sabor intenso.</p>
+                    <p class="precio">$120.00</p>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ivan.dominguezsanchez.7/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.link/3i85ai" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://x.com/CafeDosan" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/domin.117/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 CAFÉ DOSAN</p>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="carrito.js"></script>
+</body>
+</html>

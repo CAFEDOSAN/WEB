@@ -1,0 +1,326 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    background-image: url('bg.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el header */
+    background-position: center; /* Centra la imagen */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    min-height: 400px; /* Ajusta la altura mínima según tus necesidades */
+    display: flex; /* Para centrar el contenido verticalmente */
+    flex-direction: column; /* Para apilar el contenido verticalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+}
+main {
+    background-color:  #b6afa4;/* Cambia #f0f0f0 por el color que desees */
+}
+
+.menu-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav.menu li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-content {
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Agrega un fondo oscuro semi-transparente para mejorar la legibilidad del texto */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+section {
+    padding: 2rem;
+}
+
+/*carrusel*/
+#tipos {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.carousel-slide img {
+    max-width: 80%; /* Ajusta el ancho máximo según tus necesidades */
+    max-height: 450px; /* Ajusta la altura máxima según tus necesidades */
+    height: auto;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+
+footer {
+    background-color: #7d7d7d;
+    padding: 1rem;
+    text-align: center;
+}
+.social-icons {
+    margin-bottom: 1rem;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+.btn {
+    background-color: #602d24;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    nav.menu {
+        display: none; /* Oculto inicialmente en pantallas pequeñas */
+        width: 100%;
+        background-color: #14141469;
+        position: relative;
+        top: auto;
+        left: 0;
+        z-index: 1;
+    }
+
+    nav.menu ul {
+        display: block; /* Cambia la navegación a una lista vertical */
+        text-align: center;
+    }
+
+    nav.menu li {
+        display: block; /* Cada elemento de la lista en una línea */
+        margin: 0.5rem 0;
+    }
+}
+
+/* Clase para el menú abierto */
+nav.menu.responsive {
+    display: block;
+}
+
+/*imagen 3bolsas*/
+.about-image {
+    text-align: center; /* Centra la imagen */
+    padding: 2rem 0; /* Agrega espacio alrededor de la imagen */
+}
+
+.about-image img {
+    max-width: 100%; /* La imagen ocupa el 100% del ancho de su contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+/*imagen de  tasa*/
+.contact-image {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*linea los texto*/
+h1, h2, h3, p, li{
+    text-align: center;
+}
+
+.header-content, #inicio, #contacto {
+    display: flex; /* Habilita Flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-direction: column; /* Alinea los elementos en columna */
+}
+
+/* Estilos para los botones */
+button, .btn {
+    display: inline-block; /* Permite que el botón conserve su ancho */
+    text-align: center; /* Centra el texto dentro del botón */
+    transition: background-color 0.3s ease; /* Agrega una transición suave */
+}
+
+button:hover, .btn:hover {
+    background-color: #975e3b; /* Cambia el color de fondo al pasar el mouse */
+    color: #fff; /* Cambia el color del texto al pasar el mouse */
+}
+
+/*catalogo*/
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.producto {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 80%; /* Ajusta el ancho máximo según tus necesidades */
+    max-height: 300px; /* Ajusta la altura máxima según tus necesidades */
+    height: auto;
+}
+
+.precio {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+/*carrito*/
+/* Icono del carrito */
+.cart-icon {
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.cart-count {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+/* Modal del carrito */
+.cart-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cart-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close-cart {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.cart-items {
+    margin-bottom: 1rem;
+}
+
+.cart-total {
+    text-align: right;
+}
+
+.checkout-btn {
+    background-color: #c6aa86;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el botón "Eliminar" */
+.cart-items button {
+    background-color: #d9534f; /* Color de fondo rojo */
+    color: #fff; /* Color de texto blanco */
+    padding: 0.3rem 0.6rem; /* Ajusta el relleno */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    font-size: 0.8rem; /* Ajusta el tamaño de la fuente */
+    transition: background-color 0.3s ease; /* Agrega una transición suave */
+}
+
+/* Estilos para el hover del botón "Eliminar" */
+.cart-items button:hover {
+    background-color: #c9302c; /* Color de fondo rojo más oscuro al pasar el mouse */
+}
